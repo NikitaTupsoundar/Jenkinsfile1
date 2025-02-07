@@ -1,0 +1,24 @@
+pipeline {
+    agent any  // This defines where the pipeline runs (e.g., any available agent)
+    
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the project...'
+                // Insert build steps, e.g., Maven, Gradle, npm commands
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+                // Insert testing steps, e.g., running unit tests
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to production...'
+                // Insert deployment steps
+            }
+        }
+    }
+}
